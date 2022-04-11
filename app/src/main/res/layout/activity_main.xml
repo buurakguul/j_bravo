@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Time: 30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="43dp"
+        android:gravity="center"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTime" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="0dp"
+        android:foregroundGravity="fill_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textScore">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:srcCompat="@drawable/_60_2607033_cartoon_network_clipart_johnny_bravo_png_download"
+            android:onClick="scoreIncrease"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            app:srcCompat="@drawable/_60_1606801_johnny_bravo"
+            android:onClick="scoreIncrease"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            app:srcCompat="@drawable/_49_1490610_johnny_bravo_logo_png_transparent_johnny_bravo_vector"
+            android:onClick="scoreIncrease"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:srcCompat="@drawable/johnny_bravo_background_png"
+            android:onClick="scoreIncrease"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:srcCompat="@drawable/johnny_bravo_tv_fanart_fanart_tv_clothing_silhouette_person_arrow_transparent_png_1952069"
+            android:onClick="scoreIncrease"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            app:srcCompat="@drawable/png_clipart_desktop_cartoon_network_television_crossover_johnny_hallyday_television_angle"
+            android:onClick="scoreIncrease"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            app:srcCompat="@drawable/png_transparent_cartoon_network_johnny_bravo_television_show_drawing_others_television_comics_superhero"
+            android:onClick="scoreIncrease"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            app:srcCompat="@drawable/png_transparent_johnny_bravo_drawing_cartoon_network_humour_johnny_bravo_fictional_character_cartoon_shoe_thumbnail"
+            android:onClick="scoreIncrease"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            app:srcCompat="@drawable/png_transparent_telegram_sticker_line_finger_jhoony_bravo_hand_fictional_character_cartoon_thumbnail"
+            android:onClick="scoreIncrease"/>
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
